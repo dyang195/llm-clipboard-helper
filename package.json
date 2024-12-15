@@ -1,0 +1,51 @@
+{
+  "name": "vscode-directory-copier",
+  "displayName": "Directory Copier",
+  "description": "Copy directory contents and search results to clipboard",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "directory-copier.copyDirectory",
+        "title": "Copy Directory Contents to Clipboard"
+      },
+      {
+        "command": "directory-copier.copySearchResults",
+        "title": "Copy Search Results",
+        "icon": "$(copy)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "directory-copier.copyDirectory",
+          "when": "explorerResourceIsFolder",
+          "group": "navigation"
+        }
+      ],
+      "editor/title": [
+        {
+          "command": "directory-copier.copySearchResults",
+          "when": "resourceScheme == search-editor",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "^16.18.34",
+    "typescript": "^5.0.4"
+  }
+}
