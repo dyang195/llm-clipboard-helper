@@ -12,8 +12,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "directory-copier.copyDirectory",
-        "title": "Copy Directory Contents to Clipboard"
+        "command": "directory-copier.copyContents",
+        "title": "Copy All Contents"
       },
       {
         "command": "directory-copier.copySearchResults",
@@ -24,9 +24,9 @@
     "menus": {
       "explorer/context": [
         {
-          "command": "directory-copier.copyDirectory",
-          "when": "explorerResourceIsFolder",
-          "group": "navigation"
+          "command": "directory-copier.copyContents",
+          "when": "explorerResourceIsFolder || listMultiSelection",
+          "group": "clipboard"
         }
       ],
       "editor/title": [
