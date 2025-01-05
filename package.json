@@ -1,7 +1,7 @@
 {
-  "name": "vscode-directory-copier",
-  "displayName": "Directory Copier",
-  "description": "Copy directory contents and search results to clipboard",
+  "name": "llm-clipboard-helper",
+  "displayName": "LLM Clipboard Helper",
+  "description": "A Visual Studio Code extension that provides utilities for copying code and search results when working with AI language models (like ChatGPT, Claude, or Microsoft Copilot). Adds convenient copy commands to help you share code context in AI chats.",
   "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
@@ -12,11 +12,11 @@
   "contributes": {
     "commands": [
       {
-        "command": "directory-copier.copyContents",
+        "command": "llm-clipboard-helper.copyContents",
         "title": "Copy All Contents"
       },
       {
-        "command": "directory-copier.copySearchResults",
+        "command": "llm-clipboard-helper.copySearchResults",
         "title": "Copy Search Results",
         "icon": "$(copy)"
       }
@@ -24,14 +24,14 @@
     "menus": {
       "explorer/context": [
         {
-          "command": "directory-copier.copyContents",
+          "command": "llm-clipboard-helper.copyContents",
           "when": "explorerResourceIsFolder || listMultiSelection",
           "group": "clipboard"
         }
       ],
       "editor/title": [
         {
-          "command": "directory-copier.copySearchResults",
+          "command": "llm-clipboard-helper.copySearchResults",
           "when": "resourceScheme == search-editor",
           "group": "navigation"
         }
@@ -47,5 +47,12 @@
     "@types/vscode": "^1.74.0",
     "@types/node": "^16.18.34",
     "typescript": "^5.0.4"
-  }
+  },
+  "publisher": "dyang195",
+  "repository": {
+    "type": "git",
+    "url": "https://https://github.com/dyang195/llm-clipboard-helper.git"
+  },
+  "license": "MIT",
+  "icon": "icon.png"
 }

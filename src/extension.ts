@@ -4,7 +4,7 @@ import * as path from 'path';
 
 export function activate(context: vscode.ExtensionContext) {
     // Unified command to copy contents
-    let copyContentsDisposable = vscode.commands.registerCommand('directory-copier.copyContents', async (uri: vscode.Uri, selectedFiles?: vscode.Uri[]) => {
+    let copyContentsDisposable = vscode.commands.registerCommand('llm-clipboard-helper.copyContents', async (uri: vscode.Uri, selectedFiles?: vscode.Uri[]) => {
         try {
             let filesToProcess: vscode.Uri[] = [];
             
@@ -73,7 +73,7 @@ export function activate(context: vscode.ExtensionContext) {
     });
 
     // Command to copy search results
-    let copySearchResultsDisposable = vscode.commands.registerCommand('directory-copier.copySearchResults', async () => {
+    let copySearchResultsDisposable = vscode.commands.registerCommand('llm-clipboard-helper.copySearchResults', async () => {
         // Get the active search query
         const searchViewType = 'workbench.view.search';
         await vscode.commands.executeCommand('workbench.view.search.focus');

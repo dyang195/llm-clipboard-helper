@@ -1,4 +1,4 @@
-# LLMChat Clipboard Helper
+# LLM Clipboard Helper
 
 A Visual Studio Code extension that provides utilities for copying code and search results when working with AI language models (like ChatGPT, Claude, or Microsoft Copilot). Adds convenient copy commands to help you share code context in AI chats.
 
