@@ -22,7 +22,7 @@ This extension is an open source project being actively developed, and contribut
 
 ## Installation
 
-Currently, you can install this extension either from the VSCode Extension Marketplace, or from this repository with the following steps:
+Currently, you can install this extension either from the VSCode Extension Marketplace, or from the GitHub repository with the following steps:
 1. Downloading the .vsix file
 2. Opening VS Code
 3. Going to the Extensions view
