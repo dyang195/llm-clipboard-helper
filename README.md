@@ -2,6 +2,8 @@
 
 A Visual Studio Code extension that provides utilities for copying code and search results when working with AI language models (like ChatGPT, Claude, or Microsoft Copilot). Adds convenient copy commands to help you share code context in AI chats.
 
+This extension is an open source project being actively developed, and contributions are very welcome! Feel free to submit feature requests, bug reports, or pull requests to help make it even better.
+
 ## Usage
 
 ### Copying Contents
